@@ -1,0 +1,6 @@
+nome,cpf_cnpj,email,servico,valor,data
+João Silva,123.456.789-00,joao@email.com,Consultoria em TI,1500.00,2026-07-01
+Maria Souza,987.654.321-00,maria@email.com,Desenvolvimento Web,3200.00,2026-07-02
+Tech Ltda,12.345.678/0001-99,contato@tech.com,Manutenção de Sistemas,800.00,2026-07-03
+Ana Costa,111.222.333-44,ana@email.com,Análise de Dados,2100.00,2026-07-04
+Carlos Mendes,,carlos@email.com,Suporte Técnico,450.00,2026-07-05
