@@ -10,8 +10,14 @@ build/
 *.egg
 .eggs/
 
-# Executáveis gerados
+# Arquivos de ambiente
+.env
+.env.*
+
+# Executáveis e builds
 *.exe
+*.zip
+build/
 
 # Logs
 logs/
@@ -24,3 +30,8 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Scripts de teste e build
+bot_teste.py
+teste_playwright.py
+build_exe.py
