@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🤖 Bot de Geração de NFS-e</h1>
+  <h1> Bot de Geração de NFS-e</h1>
   <p><strong>Automação de emissão de Notas Fiscais de Serviços Eletrônicas</strong></p>
   <p>
     <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=flat&logo=python" alt="Python">
@@ -11,11 +11,11 @@
 
 ---
 
-## 📋 Sobre o Projeto
+##  Sobre o Projeto
 
 Este bot automatiza o processo de emissão de **Notas Fiscais de Serviços Eletrônicas (NFS-e)**. Ele lê dados de clientes de um arquivo CSV, preenche formulários automaticamente em um portal web, gera os PDFs das notas fiscais e organiza tudo em pastas separadas por cliente.
 
-### 🔄 Fluxo de Funcionamento
+###  Fluxo de Funcionamento
 
 ```
 CSV de Clientes → Leitor (Pandas) → Playwright (navegador headless)
@@ -31,27 +31,27 @@ CSV de Clientes → Leitor (Pandas) → Playwright (navegador headless)
                               Relatório detalhado de execução
 ```
 
-## 🧱 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 bot-notas-fiscais/
-├── bot.py              # 🧠 Bot principal — automação com Playwright
-├── app_gui.py          # 🖥️ Interface gráfica (CustomTkinter)
-├── leitor.py           # 📄 Leitura e validação de arquivos CSV
-├── organizador.py      # 📁 Organização de PDFs em pastas por cliente
-├── relatorio.py        # 📊 Geração de relatórios de execução
+├── bot.py              #  Bot principal — automação com Playwright
+├── app_gui.py          #  Interface gráfica (CustomTkinter)
+├── leitor.py           # Leitura e validação de arquivos CSV
+├── organizador.py      #  Organização de PDFs em pastas por cliente
+├── relatorio.py        #  Geração de relatórios de execução
 ├── servidor/
-│   ├── app.py          # 🌐 Servidor Flask simulando portal de prefeitura
+│   ├── app.py          #  Servidor Flask simulando portal de prefeitura
 │   └── __init__.py
 ├── dados/
-│   └── clientes.csv    # 📋 Base de dados dos clientes
-├── logs/               # 📝 Logs e relatórios gerados
-├── notas/              # 📂 PDFs das notas fiscais geradas
-├── requirements.txt    # 📦 Dependências do projeto
-└── README.md           # 📖 Este arquivo
+│   └── clientes.csv    #  Base de dados dos clientes
+├── logs/               #  Logs e relatórios gerados
+├── notas/              #  PDFs das notas fiscais geradas
+├── requirements.txt    #  Dependências do projeto
+└── README.md           #  Este arquivo
 ```
 
-## 🚀 Como Usar
+##  Como Usar
 
 ### 1. Instalação
 
@@ -82,7 +82,7 @@ Edite o arquivo `dados/clientes.csv` com os dados dos clientes. As colunas obrig
 
 ### 3. Executar
 
-#### 🖥️ Modo Gráfico (recomendado)
+####  Modo Gráfico (recomendado)
 
 ```bash
 python app_gui.py
@@ -95,7 +95,7 @@ A interface gráfica permite:
 - Acompanhar o progresso em tempo real
 - Visualizar logs detalhados
 
-#### ⌨️ Modo Terminal
+####  Modo Terminal
 
 ```bash
 # Inicie o servidor Flask em um terminal
@@ -105,18 +105,18 @@ python servidor/app.py
 python bot.py
 ```
 
-## ⚙️ Funcionalidades
+##  Funcionalidades
 
-- ✅ **Leitura inteligente de CSV** — validação linha a linha com detecção de erros
-- ✅ **Automação headless** — navegador Chromium rodando em segundo plano
-- ✅ **Geração de PDF** — captura fiel da nota fiscal gerada
-- ✅ **Organização automática** — pastas separadas por cliente
-- ✅ **Relatório detalhado** — resumo de sucessos, falhas e erros
-- ✅ **Interface gráfica** — acompanhamento visual do progresso
-- ✅ **Logs completos** — arquivos de log com data/hora para auditoria
-- ✅ **Suporte a cancelamento** — interrompa o processamento a qualquer momento
+-  **Leitura inteligente de CSV** — validação linha a linha com detecção de erros
+-  **Automação headless** — navegador Chromium rodando em segundo plano
+-  **Geração de PDF** — captura fiel da nota fiscal gerada
+-  **Organização automática** — pastas separadas por cliente
+-  **Relatório detalhado** — resumo de sucessos, falhas e erros
+-  **Interface gráfica** — acompanhamento visual do progresso
+-  **Logs completos** — arquivos de log com data/hora para auditoria
+-  **Suporte a cancelamento** — interrompa o processamento a qualquer momento
 
-## 📦 Dependências
+##  Dependências
 
 | Pacote            | Versão | Finalidade                    |
 |-------------------|--------|-------------------------------|
@@ -127,7 +127,7 @@ python bot.py
 | `loguru`          | -      | Logging estruturado           |
 | `python-dotenv`   | -      | Configuração por variáveis    |
 
-## 📄 Licença
+##  Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
